@@ -1,0 +1,45 @@
+Nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    top: 0;
+    position: fixed;
+    background-color: white;
+}
+Nav a{
+    text-decoration: none;
+    line-height: 50px;
+    color: black;
+    padding: 15px 25px;
+}
+
+
+Nav a:hover{
+    border-bottom: 5px solid salmon;
+
+}
+.Nav a{
+    background-color: salmon;
+}
+Nav a:active {
+    color: red;
+  }
+Nav a:focus {
+    color: red;
+    border-bottom: 5px solid salmon;
+  }
+Nav a:target {
+    color: red;
+  }
+@media only screen and (max-width: 600px) {
+    Nav{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        transform: translateY(0);
+        height: 30vh;
+    }
+    Nav a{
+        padding-left: 0;
+    }
+}
