@@ -8,6 +8,13 @@ import Footer from "../components/Footer";
 import AboutMe from "../components/AboutMe/AboutMe";
 import { useTheme, useThemeUpdate } from '../themes/ThemeContext';
 import './RouterLanding.modules.css';
+import Nav from '../components/Nav';
+import resumeIco from "../assets/icons8-resume-100.png"
+import Git from "../assets/icons8-github-120.png"
+import Email from "../assets/icons8-gmail-144.png"
+import linkedln from "../assets/icons8-linkedin-circled (1).svg";
+import IconsLinks from '../components/IconsLinks';
+
 
 const RoutedLanding = () => {
     const darkTheme = useTheme();
@@ -28,19 +35,31 @@ const RoutedLanding = () => {
    return (
      <BrowserRouter>
      <div style={themeStyles} className='container'>
+    
+   
+     
      <div className="home" >
+    
      <Routes>
-       <Route path="/" element={<> 
-        <Home ref={home} pages={pages} toggleTheme={toggleTheme}/>
+
+       <Route path="/home" element={<> 
+        <Nav pages={pages} toggleTheme={toggleTheme}/>
+        <Home ref={home}  toggleTheme={toggleTheme}/>
          <Skills ref={skills} />
          <Projects ref={projects}/>
          <Education ref={education}/></>}>
         
        </Route>
+       <Route exact path='/' element={<h2>This portfolio is under development. Thank you for visiting!<br/>
+         <a href='/home'>Home</a> </h2>}></Route>
        <Route path="/aboutme" element={<AboutMe />} />
      </Routes>
      <Footer />
      </div>
+     <div className='icons'>
+     <IconsLinks icon={resumeIco} icon1={Git} icon2 ={Email} icon3={linkedln}/>
+     </div>
+     
      </div>
    </BrowserRouter>
   

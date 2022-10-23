@@ -1,8 +1,10 @@
-import React, { useContext, useRef } from "react";
-import "./Nav.module.css";
-import pdf from "../Oleksandr_Kodovbetskyi_-_Full_Stack_Developer.pdf";
+import React from "react";
+import styles from "./Nav.module.css";
+import logo from '../assets/ak-low-resolution-logo-black-on-white-background.png'
+
 
 const Nav = (props) =>{
+  
     const scrollToSection = (elRef) => {
          const scrollLocation ={
             top: (elRef.current.offsetTop) - 200,
@@ -13,8 +15,9 @@ const Nav = (props) =>{
 
     }
     return(
-         <nav className="Nav">
-            <p className="logo">OK logo</p>
+         <nav className={styles.Nav}>
+            <p className={styles.logo}><img src={logo} alt="logo"></img></p>
+          <div className={styles.NavLinks}>
             <a className="right" href="/#" onClick={
                (e)=>scrollToSection(props.pages[1])
             }>home()</a>
@@ -28,17 +31,10 @@ const Nav = (props) =>{
             <a href="/#education" onClick={
                (e)=>  scrollToSection(props.pages[2])
             }>education()</a>
-             <a
-    href={pdf}
-    className='btn'
-    download
-    rel='noopener noreferrer'
-    target='_blank'
-  >
-    downloadCV()
-  </a> 
+            
+  </div>
       
-  <button onClick={props.toggleTheme}>Theme</button>  </nav>
+  </nav>
     )
 }
 export default Nav;

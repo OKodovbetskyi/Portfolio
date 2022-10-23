@@ -3,11 +3,12 @@
 } 
 
 .CardBody{
-    height: 60vh;
+    height: 80;
     padding: 40px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 15% 0;
 }
+
 .closinTag{
     float: right;
 }
@@ -15,6 +16,12 @@
     .Card{
         width: 100%;
         margin: 0;
+    }
+    .CardBody{
+        height: 100%;
+        padding: 5px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin: 15% 0;
     }
    
 }

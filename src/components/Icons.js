@@ -1,17 +1,13 @@
 import React from "react";
-import icon from "../assets/icons8-java.svg"
-import jsicon from "../assets/icons8-javascript.svg"
-import nodejsicon from "../assets/icons8-nodejs.svg"
-import reacticon from "../assets/icons8-react-native.svg"
-import styles from "./Icons.module.css";
-const Icons = () =>{
+import styles from "./Icons.module.css"
+const Icons = ({icon, icon1, icon2,icon3}) =>{
     return (
         <span className={styles.Icons}>
-            <img src={jsicon} />
-            <img src={reacticon} />
-            <img src={nodejsicon} />
-            <img src={icon} />
-        </span>
-    )
+        <img src={icon} alt=''/>
+        <img src={icon2} alt=''/>
+        <img src={icon1} alt=''/>
+        <img src={icon3} alt=''/>
+    </span>
+    );
 }
-export default Icons;
+export default Icons

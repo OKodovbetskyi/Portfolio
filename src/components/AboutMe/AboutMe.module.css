@@ -1,8 +1,8 @@
 .AboutMeCard{
-
     padding: 50px;
-    height: 50vh;
+    height: 30vh;
     display: flex;
+    position: relative;
 }
 .leftside{
     width: 45%;
@@ -10,7 +10,7 @@
 .contactForm{
     margin-left: auto;
     width: 45%;
-    position: relative;
+   
     
 }
 .contactForm input{
@@ -18,7 +18,9 @@
     border-bottom: 2px solid black;
     line-height: 30px;
     width: 100%;
+    margin-bottom: 15px;
 }
+
 .contactForm input:last-child{
     line-height: 60px;
    
@@ -27,8 +29,29 @@
     position: absolute;
     top:0;
     right: 0;
+    padding: 20px;
 }
 .closebutton a{
     text-decoration: none;
+   
+}
+
+@media only screen 
+and (max-width : 640px) {
+    .AboutMeCard{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30%;
+    }
+    .leftside{
+        width: 100%;
+    }
+    .contactForm{
+        width: 100%;
+        position: relative;
+     
+        
+    }
    
 }

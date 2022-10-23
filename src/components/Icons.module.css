@@ -1,4 +1,23 @@
 span img{
-    width: 50px;
+    width: 45px;
     padding: 0 6%;
+    position: relative;
 }
+.email{
+    position: absolute;
+    right: 50px;
+    animation: ease-in .1s;
+    display: none;
+    background-color: rgb(255, 226, 173);
+    padding: 10px;
+    border-radius: 20px;
+}
+.wrapper:hover .email{
+    display: inline;
+}
+
+span img:hover{
+    
+    display: inline;
+}
+

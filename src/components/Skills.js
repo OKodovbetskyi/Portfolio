@@ -8,7 +8,7 @@ const Skills = React.forwardRef((prop,ref) =>{
         <li>JS </li>
         <li>HTML </li>
         <li>CSS</li>
-        <li>Java </li>
+  
     </ul>
             
         </Card>
