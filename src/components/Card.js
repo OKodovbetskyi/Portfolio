@@ -6,9 +6,8 @@ const Card = React.forwardRef((props, ref)=>{
         <div ref={ref} className={styles.Card}>
            
             <div className={styles.CardBody}>
-            <h4>{props.cardName}</h4>
+            <h2 className={styles.header}>   {props.cardName}</h2>
                 {props.children}
-            <h4 className={styles.closinTag}>{props.cardNamec}</h4>
             </div>
            
         </div>

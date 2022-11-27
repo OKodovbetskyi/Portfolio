@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,500;1,600&display=swap');
+
 html{
     position: relative;
     min-height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }

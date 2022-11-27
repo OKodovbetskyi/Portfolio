@@ -1,3 +1,16 @@
-.Education{
-    margin: 200px;
+.educationContent{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imagepin{
+    height: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .educationContent{
+        display:flex;
+        flex-direction: column;
+      
+    }
+    
 }

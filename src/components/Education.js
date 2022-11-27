@@ -1,12 +1,20 @@
 import React from "react";
 import Card from "./Card";
 import styles from "./Education.modules.css";
+import IconUni from "../assets/icons8-map-pin-32.png"
 const Education = React.forwardRef((props,ref) =>{
     return (
         <div className={styles.Education}>
-        <Card ref={ref} cardName="<Education>" cardNamec="</Education>">
-        <div>
-            <h3>Kingston University (2020-2023)</h3>
+        <Card ref={ref} cardName="< Education >" img={IconUni} cardNamec="</Education>">
+        <div className="educationContent">
+            <div>
+            <h3>BSc (Hons) Computer Science</h3>
+            <p>Kingston University London</p>
+            </div>
+            <div className="location">
+                <p><b>2020 - Current</b></p>
+                <p><img className="imagepin" src={IconUni} alt=""/>Kingston-Upon-Thames</p>
+            </div>
         </div>
         </Card>
         </div>

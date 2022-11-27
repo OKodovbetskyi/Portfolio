@@ -1,0 +1,18 @@
+.skillWrapper h3{
+    padding: 0 5px;
+}
+.skillItem>li{
+    display: inline-block;
+    margin: 5px;
+    background: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+   
+    .skillItem>li{
+        margin: 5px;
+
+    }
+}

@@ -1,6 +1,11 @@
 
 .homeContent{
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+
 }
 .developerSign{
   
@@ -8,3 +13,11 @@
 /* Extra small devices (phones, 600px and down) */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+   
+    .homeContent{
+        text-align: center;
+        height: 80vh;
+        
+    }
+}
