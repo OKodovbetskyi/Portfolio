@@ -17,42 +17,29 @@ import IconsLinks from '../components/IconsLinks';
 
 
 const RoutedLanding = () => {
-    const darkTheme = useTheme();
-    const toggleTheme = useThemeUpdate();
-    const themeStyles = {
-      backgroundColor: darkTheme ?'white': 'black',
-      color: darkTheme ?'black': 'white',
-      margin: 0,
-      padding: 0,
-      height: '100%',
-   }
     const home = useRef(null);
     const skills = useRef(null);
+    const aboutme = useRef(null);
     const projects = useRef(null);
     const education = useRef(null);
  
     const pages = [skills,home, education, projects]
    return (
      <BrowserRouter>
-     <div style={themeStyles} className='container'>
-    
-   
-     
+     <div className='container'>
      <div className="home" >
-    
      <Routes>
-
-       <Route path="/home" element={<> 
-        <Nav pages={pages} toggleTheme={toggleTheme}/>
-        <Home ref={home}  toggleTheme={toggleTheme}/>
+       <Route path="/" element={<> 
+        <Nav pages={pages} />
+        <Home ref={home}  aboutme={aboutme}/>
+        <AboutMe ref={aboutme}/>
          <Skills ref={skills} />
          <Projects ref={projects}/>
          <Education ref={education}/></>}>
         
        </Route>
-       <Route exact path='/' element={<h2>This portfolio is under development. Thank you for visiting!<br/>
-         <a href='/home'>Home</a> </h2>}></Route>
-       <Route path="/aboutme" element={<AboutMe />} />
+      
+    
      </Routes>
      <Footer />
      </div>

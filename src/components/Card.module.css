@@ -1,12 +1,13 @@
 .Card{
   height: 100%;
+
 } 
 
 .CardBody{
     height: 80;
-    padding: 100px;
+    padding: 50px ;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin: 20% 0;
+    margin: 10% 0;
 }
 .header{
     font-weight: bold;
@@ -15,9 +16,7 @@
 .closinTag{
     float: right;
 }
-.iconCard{
-    height: 40px;
-}
+
 @media only screen and (max-width: 600px) {
     .Card{
         width: 100%;
@@ -25,7 +24,7 @@
     }
     .CardBody{
         height: 100%;
-        padding: 5px 0 5px 0;
+        padding: 5px 5px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         margin: 15% 0;
     }

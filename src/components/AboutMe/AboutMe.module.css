@@ -1,17 +1,13 @@
 .AboutMeCard{
-    padding: 50px;
+
     height: 30vh;
     display: flex;
     position: relative;
 }
-.leftside{
-    width: 45%;
-}
+
 .contactForm{
     margin-left: auto;
-    width: 45%;
-   
-    
+    width: 45%;  
 }
 .contactForm input{
     border: none;
@@ -39,7 +35,6 @@
 @media only screen 
 and (max-width : 640px) {
     .AboutMeCard{
-        height: 100vh;
         display: flex;
         flex-direction: column;
         margin-bottom: 30%;

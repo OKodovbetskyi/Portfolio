@@ -1,3 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .navbar-hamburger {
+    display: none;
+  }
+  
+  .navbar-hamburger-line {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: transform 0.2s ease;
+  }
+  
+  .navbar-hamburger-line.open {
+    transform: rotate(45deg);
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+    
+    .navbar-hamburger {
+      display: block;
+    }
+  }
+  
+  
+
 Nav{
     display: flex;
     justify-content: space-between;
@@ -8,42 +59,54 @@ Nav{
     position: fixed;  
 }
 
-.logo > img{
-    padding: 0;
-    width: 100px;
-}
-.NavLinks{
-    display: flex;
-    position: relative;
-}
+
 Nav a{
     text-decoration: none;
-    line-height: 50px;
+    line-height: 10%;
     color: black;
     padding: 20px;
-   
+    transition: border-bottom 0.5s;
 }
-
-Nav a:hover{
-    border-bottom: 5px solid salmon;
-
-}
-
-
-@media only screen 
-and (max-width : 640px) {
+/* Add this to the link element */
+Nav a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+  }
   
-    .Nav{
-       display: none;
-        
-       
+  /* Add the underline */
+Nav a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: salmon;
+    transition: width 0.3s;
+  }
+  
+  /* Add the hover effect */
+  Nav a:hover::before {
+    width: 100%;
+  }
+  /* Add the animation effect */
+/* Add the animation effect */
+@keyframes text-color-animation {
+    0% {
+      color: black;
     }
-    .NavLinks{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    100% {
+      color: salmon;
     }
-}
+  }
+  /* Add the hover effect */
+  Nav a:hover {
+    animation: text-color-animation .3s ease-in;
+    color: salmon;
+  }
+  
+
         
     
    

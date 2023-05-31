@@ -10,6 +10,47 @@
 .developerSign{
   
 }
+.aboutMeLink {
+    text-decoration: none;
+    position: relative;
+    color: black;
+  }
+  
+  /* Add the underline */
+  .aboutMeLink::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: salmon;
+    transition: width 0.3s;
+  }
+  
+  /* Add the hover effect */
+  .aboutMeLink:hover::before {
+    width: 100%;
+  }
+ 
+  .arrow {
+    width: 40px;
+  height: 40px;
+  background-image: url('../../assets/pagedown.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+    top: 40%;
+    position: relative;
+  }
+  
+  @keyframes move-animation {
+    from {
+      top: 25%;
+    }
+    to {
+      top: 40%;
+    }
+  }
 /* Extra small devices (phones, 600px and down) */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -19,5 +60,9 @@
         text-align: center;
         height: 80vh;
         
+    }
+    .arrow {
+      top: 25%;
+      position: relative;
     }
 }
