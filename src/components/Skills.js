@@ -3,13 +3,14 @@ import React from "react"
 import styles from "./Skills.modules.css";
 const Skills = React.forwardRef((prop,ref) =>{
     return (
-        <Card ref={ref} cardName="< Skills > " cardNamec="</Skills>" >
+        <>
         <div className="skillWrapper">
         <h3>Languages</h3>
         <ul className="skillItem">
             <li>JavaScript</li>
             <li>Java</li>
             <li>Bash Scripting</li>
+            <li>Python</li>
         </ul>
         </div>
         <div className="skillWrapper">
@@ -58,8 +59,7 @@ const Skills = React.forwardRef((prop,ref) =>{
             <li>Relational Databases</li>
         </ul>
         </div>
-
-        </Card>
+        </>
     )
 })
 export default Skills;

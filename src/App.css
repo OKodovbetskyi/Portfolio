@@ -1,16 +1,8 @@
 .home{
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
-.matrix-background{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
 @media only screen and (max-width: 600px) {
     .home{
         width: 90%;

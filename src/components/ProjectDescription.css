@@ -1,0 +1,23 @@
+.desc-container{
+    background-color: white;
+    height: 100%;
+}
+.desc-container img{
+  width: 50%;
+}
+.img-and-description{
+    display: flex;
+    
+}
+.project-desc{
+    margin-left: 10px;
+}
+.project-links img{
+    width: 30px;
+    margin: 0 5px;
+}
+.project-links{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}

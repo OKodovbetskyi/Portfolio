@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 
-import './Nav.module.css';
+import './Nav.css';
 import logo from '../assets/ak-low-resolution-logo-black-on-white-background.png'
+import Skills from './Skills';
+import Projects from './Projects';
+import { Link } from 'react-router-dom';
 const Nav = (props) =>{
    const [isOpen, setIsOpen] = useState(false);
-   const [activePage, setActivePage] = useState("about");
+   const [selected, setSelected] = useState({
+      Home: true,
+      Skills: false,
+      Projects: false,
+      Education: false,
+    })
     const scrollToSection = (elRef) => {
          const scrollLocation ={
             top: (elRef.current.offsetTop)-100,
@@ -12,14 +20,17 @@ const Nav = (props) =>{
         }
         window.scrollTo(scrollLocation);
     }
+    const selectHandler = (name)=>{
+      setSelected({[name] : true})
+    }
     return(
      <nav className="navbar">
-      <div className="navbar-logo">Logo</div>
+     <img className="nav-logo" src={logo} />
       <div className="navbar-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Contact</a>
+        <Link onClick={()=>selectHandler('Home')} className={selected.Home && 'selected'} to="/">Home</Link>
+        <Link onClick={()=>selectHandler('Skills')} className={selected.Skills && 'selected'} to="/skills">Skills</Link>
+        <Link onClick={()=>selectHandler('Projects')} className={selected.Projects && 'selected'} to="/projects">Projects</Link>
+        <Link onClick={()=>selectHandler('Education')} className={selected.Education && 'selected'} to="/education">Experience</Link>
       </div>
       <div className="navbar-hamburger" onClick={() => setIsOpen(!isOpen)}>
         <div className={`navbar-hamburger-line ${isOpen ? 'open' : ''}`}></div>
@@ -27,27 +38,6 @@ const Nav = (props) =>{
         <div className={`navbar-hamburger-line ${isOpen ? 'open' : ''}`}></div>
         <div className={`navbar-hamburger-line ${isOpen ? 'open' : ''}`}></div>
       </div>
-
-
-
-            {/* <p className={styles.logo}><img src={logo} alt="logo"></img></p>
-          <div className={styles.NavLinks}>
-            <a className="right" href="/" onClick={
-               (e)=>scrollToSection(props.pages[1])
-            }>home()</a>
-            <a href="#skills" onClick={
-               (e)=>
-                  scrollToSection(props.pages[0])
-            }>skills()</a>
-                <a href="#projects" onClick={
-               (e)=> scrollToSection(props.pages[3])
-            }>projects() </a>
-            <a href="#education" onClick={
-               (e)=>  scrollToSection(props.pages[2])
-            }>education()</a>
-            
-  </div> */}
-      
   </nav>
     )
 }

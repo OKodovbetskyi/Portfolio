@@ -1,0 +1,38 @@
+.projects-container{
+    padding: 15px;
+}
+.project-tabs>a:hover {
+    animation: text-color-animation .3s ease-in;
+    color: salmon;
+  }
+.project-tabs>a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin: 5px;
+  }
+.project-tabs{
+    display: flex;
+    flex-direction: column;
+}
+.selectedProj h3{
+ color: salmon;
+ border-bottom: 2px solid salmon;
+ padding: 5px 0;
+}
+.projectCard{
+  background-color: white;
+  padding: 0 10px;
+  margin: 5px 0;
+
+}
+@keyframes text-color-animation {
+    0% {
+      color: black;
+    }
+    100% {
+      color: salmon;
+    }
+  }

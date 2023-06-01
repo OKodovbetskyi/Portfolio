@@ -5,7 +5,7 @@ import IconUni from "../assets/icons8-map-pin-32.png"
 const Education = React.forwardRef((props,ref) =>{
     return (
         <div className={styles.Education}>
-        <Card ref={ref} cardName="< Education >" img={IconUni} cardNamec="</Education>">
+        <h2>Education & Experience</h2>
         <div className="educationContent">
             <div>
             <h3>BSc (Hons) Computer Science</h3>
@@ -16,7 +16,6 @@ const Education = React.forwardRef((props,ref) =>{
                 <p><img className="imagepin" src={IconUni} alt=""/>Kingston-Upon-Thames</p>
             </div>
         </div>
-        </Card>
         </div>
     )
 })

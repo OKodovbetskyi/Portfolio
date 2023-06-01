@@ -4,12 +4,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    padding: 15px;
+    height: 80%;
+}
 
-}
-.developerSign{
-  
-}
 .aboutMeLink {
     text-decoration: none;
     position: relative;
