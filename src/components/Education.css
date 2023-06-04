@@ -1,0 +1,44 @@
+.educationContent{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imagepin{
+    height: 20px;
+}
+.experience-container{
+    border-left: 1px solid #d1d1d1;
+    padding: 0 15px;
+}
+.Job{
+    position: relative;
+}
+.Job li{
+    font-size: 14px;
+    text-decoration: none;
+}
+p{
+    font-size: 14px;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: -23px;
+    width: 15px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+.datesworked{
+    float: right;
+}
+.projects-container h3{
+    border-bottom: 2px solid #d1d1d1;
+}
+@media only screen and (max-width: 600px) {
+    .educationContent{
+        display:flex;
+        flex-direction: column;
+      
+    }
+    
+}
