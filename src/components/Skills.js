@@ -5,7 +5,7 @@ const Skills = React.forwardRef((prop,ref) =>{
     return (
         <>
         <div className="skillWrapper">
-        <h3>Languages</h3>
+        <h4>Languages</h4>
         <ul className="skillItem">
             <li>JavaScript</li>
             <li>Java</li>
@@ -14,7 +14,7 @@ const Skills = React.forwardRef((prop,ref) =>{
         </ul>
         </div>
         <div className="skillWrapper">
-        <h3>Front-End</h3>
+        <h4>Front-End</h4>
         <ul className="skillItem">
             <li>HTML</li>
             <li>CSS</li>
@@ -25,7 +25,7 @@ const Skills = React.forwardRef((prop,ref) =>{
         </ul>
         </div>
         <div className="skillWrapper">
-        <h3>Back-End</h3>
+        <h4>Back-End</h4>
         <ul className="skillItem">
             <li>Node</li>
             <li>Express</li>
@@ -34,14 +34,14 @@ const Skills = React.forwardRef((prop,ref) =>{
         </ul>
         </div>
         <div className="skillWrapper">
-        <h3>Testing</h3>
+        <h4>Testing</h4>
         <ul className="skillItem">
             <li>JUnit</li>
             <li>Jest</li>
         </ul>
         </div>
         <div className="skillWrapper">
-        <h3>Tools</h3>
+        <h4>Tools</h4>
         <ul className="skillItem">
             <li>VSCode</li>
             <li>Unix Command Line</li>
@@ -51,7 +51,7 @@ const Skills = React.forwardRef((prop,ref) =>{
         </ul>
         </div>
         <div className="skillWrapper">
-        <h3>Conceptual</h3>
+        <h4>Conceptual</h4>
         <ul className="skillItem">
             <li>Agile</li>
             <li>Scrum</li>

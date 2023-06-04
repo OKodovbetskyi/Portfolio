@@ -25,12 +25,11 @@ const Nav = (props) =>{
     }
     return(
      <nav className="navbar">
-     <img className="nav-logo" src={logo} />
+      <Link to="/"><img className="nav-logo" src={logo} /></Link>
       <div className="navbar-links">
-        <Link onClick={()=>selectHandler('Home')} className={selected.Home && 'selected'} to="/">Home</Link>
-        <Link onClick={()=>selectHandler('Skills')} className={selected.Skills && 'selected'} to="/skills">Skills</Link>
         <Link onClick={()=>selectHandler('Projects')} className={selected.Projects && 'selected'} to="/projects">Projects</Link>
-        <Link onClick={()=>selectHandler('Education')} className={selected.Education && 'selected'} to="/education">Experience</Link>
+        <Link onClick={()=>selectHandler('Education')} className={selected.Education && 'selected'} to="/education">About</Link>
+        <Link onClick={()=>selectHandler('Education')} className={selected.Education && 'selected'} to="/education">Contact</Link>
       </div>
       <div className="navbar-hamburger" onClick={() => setIsOpen(!isOpen)}>
         <div className={`navbar-hamburger-line ${isOpen ? 'open' : ''}`}></div>

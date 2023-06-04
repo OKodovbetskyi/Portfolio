@@ -7,6 +7,9 @@
 .imagepin{
     height: 20px;
 }
+.abouttitle{
+    margin-top: 200px;
+}
 @media only screen and (max-width: 600px) {
     .educationContent{
         display:flex;

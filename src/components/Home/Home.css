@@ -3,17 +3,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 15px;
     height: 80%;
 }
+.home-icons{
+  display: flex;
+  margin-bottom: 15px;
 
+}
+.home-icon{
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+}
 .aboutMeLink {
     text-decoration: none;
     position: relative;
     color: black;
   }
-  
+
   /* Add the underline */
   .aboutMeLink::before {
     content: "";

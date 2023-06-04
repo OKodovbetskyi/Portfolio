@@ -19,23 +19,44 @@ const Projects = React.forwardRef((props, ref) =>{
             setSelected({[name]: false})
         }else{
             setSelected({[name]: true})
+            console.log(selected);
         }
+        console.log(selected.Reading);
         
     }
     const selectedClass = selected.Devs && 'selectedProj';
     return(
         <div className='projects-container'>
-            <h2>My Projects</h2>
+            <h2>Projects.</h2>
             <p>Amet non esse adipisicing aliqua duis et. Eiusmod voluptate quis dolore consectetur sit excepteur. Veniam aliqua occaecat duis Lorem. Elit et do dolore mollit sunt sint esse do dolor laborum est aute aliqua. Anim ut do elit non occaecat do mollit minim est.</p>
             <div className="project-tabs">
-                <div className={ `${selected.Devs && 'selectedProj'} , projectCard`} onClick={()=>handleSelect("Devs")} to='/projects'><h3>Deliverable Tracking System </h3>
+                <div className={ `${selected.Devs && 'selectedProj'} , projectCard`} onClick={()=>handleSelect("Devs")} to='/projects'>
+                    <div className="additional-info">
+                        <h3>Deliverable Tracking System</h3>
+                        <span>Type: Assignment</span> 
+                        <span>Dates: 12/02/2022 - 12/03/2022</span>
+                    </div>
                 {selected.Devs && <ProjectDescription />} </div>
-                <div className={ `${selected.Healthy && 'selectedProj'} , projectCard`} onClick={()=>handleSelect("Healthy")} to='/projects'><h3>Healthy Travel App</h3>
+                <div className={ `${selected.Healthy && 'selectedProj'} , projectCard`} onClick={()=>handleSelect("Healthy")} to='/projects'>
+                <div className="additional-info">
+                        <h3>Healthy Travel App</h3>
+                        <span>Type: Assignment</span> 
+                        <span>Dates: 12/02/2022 - 12/03/2022</span>
+                    </div>
                 {selected.Healthy && <ProjectDescription />} </div>
-                <div className={ `${selected.Reading && 'selectedProj'} , projectCard`} onClick={()=>handleSelect("Reading")} to='/projects'><h3>Score App</h3> 
+                <div className={ `${selected.Reading && 'selectedProj'} , projectCard`} onClick={()=>handleSelect("Reading")} to='/projects'>
+                <div className="additional-info">
+                        <h3>Score App</h3> 
+                        <span>Type: Assignment</span> 
+                        <span>Dates: 12/02/2022 - 12/03/2022</span>
+                    </div>
                 {selected.Reading && <ProjectDescription />} </div>
                 <div className={`${selected.Score ? 'selectedProj' : ''} projectCard`} onClick={() => handleSelect("Score")} to="/projects">
-                <h3>Book Reading App</h3>
+                <div className="additional-info">
+                        <h3>Score App</h3> 
+                        <span>Type: Assignment</span> 
+                        <span>Dates: 12/02/2022 - 12/03/2022</span>
+                    </div>
                 {selected.Score && <ProjectDescription />}
 </div>
 

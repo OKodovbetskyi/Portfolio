@@ -14,6 +14,7 @@
     text-decoration: none;
     color: #000;
     text-align: center;
+    font-size: 12px;
   }
 
   .navbar-hamburger {
@@ -45,7 +46,7 @@
     border-radius: 10px 10px 0 0;
     background-color: #E1E5F8;
   }
-Nav a{
+  .navbar-links a{
     height: 100%;
     width: 100%;
     text-decoration: none;
@@ -54,14 +55,14 @@ Nav a{
     transition: border-bottom 0.5s;
 }
 /* Add this to the link element */
-Nav a {
+.navbar-links a {
     text-decoration: none;
     position: relative;
     color: black;
   }
   
   /* Add the underline */
-Nav a::before {
+  .navbar-links a::before {
     content: "";
     position: absolute;
     width: 0%;
@@ -73,7 +74,7 @@ Nav a::before {
   }
   
   /* Add the hover effect */
-  Nav a:hover::before {
+  .navbar-links a:hover::before {
     width: 100%;
   }
   /* Add the animation effect */
@@ -87,7 +88,7 @@ Nav a::before {
     }
   }
   /* Add the hover effect */
-  Nav a:hover {
+  .navbar-links a:hover {
     animation: text-color-animation .3s ease-in;
     color: salmon;
   }

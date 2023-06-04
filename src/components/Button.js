@@ -1,7 +1,8 @@
 import React from "react"
+import './Button.css'
 const Button = (props) =>{
     return (
-        <button>{props.title}</button>
+        <a className="custom-button" href={props.to}><span>{props.title}</span></a>
     )
 }
 export default Button;

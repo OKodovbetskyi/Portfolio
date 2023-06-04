@@ -8,7 +8,7 @@ const ProjectDescription = () => {
     <div className='desc-container'>
         <div>
         <div className='img-and-description'>
-        <img src={Screenshot1} alt='screen' />
+        <img className="project-image" src={Screenshot1} alt='screen' />
         <div className='project-desc'>
         <h5>Description</h5>
         <p>Officia cillum id ea proident sit deserunt ipsum. Irure eu aliqua elit voluptate aliqua reprehenderit sit tempor sint ipsum veniam. Aliquip nisi elit ullamco consequat nisi mollit. Laboris qui qui ex pariatur culpa incididunt dolore deserunt aliquip fugiat. Occaecat irure amet cillum laboris adipisicing. Veniam consectetur laboris sint qui sit labore laborum mollit duis labore magna aute voluptate laborum.</p>

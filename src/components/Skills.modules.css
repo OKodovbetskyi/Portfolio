@@ -1,14 +1,23 @@
-.skillWrapper h3{
+.skillWrapper h4{
     padding: 0 5px;
+    margin: 10px;
 }
 .skillItem>li{
     display: inline-block;
-    margin: 5px;
-    background: orange;
-    padding: 5px;
+    margin: 0 5px;
+    background: #0030ab;
+    color: white;
+    padding:0 5px;
     border-radius: 5px;
+    font-size: 14px;
 }
-
+.skillItem>li:first-child{
+    margin-left: 15px;
+}
+ul.skillItem{
+    margin: 0;
+    padding: 0;
+}
 @media only screen and (max-width: 600px) {
    
     .skillItem>li{
