@@ -4,8 +4,9 @@
     flex-direction: column;
     justify-content: center;
     padding: 15px;
-    height: 80%;
+    min-height: 70vh;
 }
+
 .home-icons{
   display: flex;
   margin-bottom: 15px;
@@ -57,14 +58,14 @@
       top: 40%;
     }
   }
-/* Extra small devices (phones, 600px and down) */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
+h1.devName{
+  margin: 0;
+}
 @media only screen and (max-width: 600px) {
-   
     .homeContent{
         text-align: center;
         height: 80vh;
+        align-items: center;
         
     }
     .arrow {

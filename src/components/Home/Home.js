@@ -22,7 +22,7 @@ const Home= React.forwardRef((props,ref) => {
     return (
             <div className={'homeContent'}>
             <h1 className={'devName'}>I am Alex Kodovbetskyi!</h1>
-            <p><i>Full Stack Developer</i></p>
+            <p><i>Full Stack Developer </i></p>
             <AboutMe />
             <div className="home-icons">
             <img className="home-icon" src={icon1} alt="JavaScript Icon" />
@@ -31,7 +31,7 @@ const Home= React.forwardRef((props,ref) => {
             <img className="home-icon" src={icon4} alt="JavaScript Icon" />
             </div>
             <div className="home-icons">
-            <Button title="Contact Me" to="#"/>
+            <Button title="Contact Me" to="contact-me"/>
             <Button title="Projects" to="projects"/>
             </div>
            

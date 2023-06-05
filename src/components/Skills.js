@@ -3,9 +3,9 @@ import React from "react"
 import styles from "./Skills.modules.css";
 const Skills = React.forwardRef((prop,ref) =>{
     return (
-        <>
+        <div>
         <div className="skillWrapper">
-        <h4>Languages</h4>
+        <p>Languages</p>
         <ul className="skillItem">
             <li>JavaScript</li>
             <li>Java</li>
@@ -14,7 +14,7 @@ const Skills = React.forwardRef((prop,ref) =>{
         </ul>
         </div>
         <div className="skillWrapper">
-        <h4>Front-End</h4>
+        <p>Front-End</p>
         <ul className="skillItem">
             <li>HTML</li>
             <li>CSS</li>
@@ -25,7 +25,7 @@ const Skills = React.forwardRef((prop,ref) =>{
         </ul>
         </div>
         <div className="skillWrapper">
-        <h4>Back-End</h4>
+        <p>Back-End</p>
         <ul className="skillItem">
             <li>Node</li>
             <li>Express</li>
@@ -34,14 +34,14 @@ const Skills = React.forwardRef((prop,ref) =>{
         </ul>
         </div>
         <div className="skillWrapper">
-        <h4>Testing</h4>
+        <p>Testing</p>
         <ul className="skillItem">
             <li>JUnit</li>
             <li>Jest</li>
         </ul>
         </div>
         <div className="skillWrapper">
-        <h4>Tools</h4>
+        <p>Tools</p>
         <ul className="skillItem">
             <li>VSCode</li>
             <li>Unix Command Line</li>
@@ -51,7 +51,7 @@ const Skills = React.forwardRef((prop,ref) =>{
         </ul>
         </div>
         <div className="skillWrapper">
-        <h4>Conceptual</h4>
+        <p>Conceptual</p>
         <ul className="skillItem">
             <li>Agile</li>
             <li>Scrum</li>
@@ -59,7 +59,7 @@ const Skills = React.forwardRef((prop,ref) =>{
             <li>Relational Databases</li>
         </ul>
         </div>
-        </>
+        </div>
     )
 })
 export default Skills;

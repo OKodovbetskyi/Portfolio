@@ -38,6 +38,8 @@
 .hideProj{
   display: none;
 }
+.additional-info h3{ 
+}
 @keyframes text-color-animation {
     0% {
       color: black;

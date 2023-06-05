@@ -1,23 +1,25 @@
 span img{
-    width: 40px;
-    padding: 6%;
-    position: relative;
+    width: 20px;
+    margin: 0 5px;
+}
+.Icons{
+    display: flex;
+    background-color:  #E1E5F8;
 }
 .email{
-    position: absolute;
-    right: 50px;
     animation: ease-in .1s;
     display: none;
-    background-color: rgb(255, 226, 173);
-    padding: 10px;
+    background-color: #01257D;
+    color: white;
     border-radius: 20px;
 }
 .wrapper:hover .email{
     display: inline;
 }
-
+.wrapper a{
+    text-decoration: none;
+}
 span img:hover{
-    
     display: inline;
 }
 

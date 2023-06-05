@@ -1,12 +1,15 @@
 .skillWrapper h4{
     padding: 0 5px;
-    margin: 10px;
+}
+.skillWrapper{
+    text-align: center;
 }
 .skillItem>li{
     display: inline-block;
     margin: 0 5px;
-    background: #0030ab;
+    background: #000000;
     color: white;
+    font-weight: bold;
     padding:0 5px;
     border-radius: 5px;
     font-size: 14px;

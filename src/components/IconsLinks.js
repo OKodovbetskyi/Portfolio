@@ -12,7 +12,7 @@ const IconsLinks = ({icon,icon1, icon2, icon3}) =>{
     target='_blank'
   >
 
-   <p className={styles.email}>Resume</p> <img src={icon} alt=''/></a></div>
+            <p className={styles.email}>Resume</p> <img src={icon} alt=''/></a></div>
            <div className={styles.wrapper}><a href="mailto:oleksandr.kodovbetskyi@gmail.com"> 
            <p className={styles.email}>Email me!</p> <img src={icon2}alt='' />
            </a></div>

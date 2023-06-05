@@ -9,12 +9,9 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import { useTheme, useThemeUpdate } from '../themes/ThemeContext';
 import './RouterLanding.modules.css';
 import Nav from '../components/Nav';
-import resumeIco from "../assets/icons8-resume-100.png"
-import Git from "../assets/icons8-github-120.png"
-import Email from "../assets/icons8-gmail-144.png"
-import linkedln from "../assets/icons8-linkedin-circled (1).svg";
-import IconsLinks from '../components/IconsLinks';
+
 import Card from '../components/Card';
+import { Contact } from '../components/Contact';
 
 
 
@@ -35,17 +32,13 @@ const RoutedLanding = () => {
      <Routes>
      <Route path='/' element={<Home/>}/>
      <Route path='/skills' element={<Skills/>}/>
-     <Route path='/about' element={<AboutMe/>}/>
+     <Route path='/about' element={<Education />}/>
      <Route path='/projects/*' element={<Projects/>}/>
-     <Route path='/education' element={<Education/>}/>
+     <Route path='/contact-me' element={<Contact/>}/>
       </Routes>
      </Card>   
    
      </div>
-     <div className='icons'>
-     <IconsLinks icon={resumeIco} icon1={Git} icon2 ={Email} icon3={linkedln}/>
-     </div>
-     
      </div>
    </BrowserRouter>
   

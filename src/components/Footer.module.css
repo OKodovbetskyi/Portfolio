@@ -1,12 +1,6 @@
 footer{
-    margin: 20%;
+ margin: 0 10px;
 }
-footer > p{
-    position: absolute;
-    bottom: 0;
-}
-
-
 @media only screen 
 and (max-width : 640px) {
    
