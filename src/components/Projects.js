@@ -3,8 +3,10 @@ import Card from "./Card";
 import { Link } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import './Projects.css';
+import { ProjectTab } from "./ProjectTab";
 import arrowright from '../assets/icons8-arrow-right-50.png';
 import ProjectDescription from "./ProjectDescription";
+import './ProjectTab.css';
 const Projects = React.forwardRef((props, ref) =>{
     const [selected, setSelected] = useState(
         {
@@ -27,41 +29,37 @@ const Projects = React.forwardRef((props, ref) =>{
     const selectedClass = selected.Devs && 'selectedProj';
     return(
         <div className='projects-container'>
-            <h1>Projects.</h1>
-            <p>Amet non esse adipisicing aliqua duis et. Eiusmod voluptate quis dolore consectetur sit excepteur. Veniam aliqua occaecat duis Lorem. Elit et do dolore mollit sunt sint esse do dolor laborum est aute aliqua. Anim ut do elit non occaecat do mollit minim est.</p>
+            <h1 className="projectTitle">Projects.</h1>
+            <p className="introduction-projects"> As a dedicated Software Engineer, I've spent the last year immersed in the world of coding, where every line written and every problem solved marks a step forward in my journey. This is where I showcase the work I've done, the solutions I've created, and the value I've added to various aspects of life through technology.
+Below, you'll find the highlights of my work over the past year, each project representing a unique challenge and a testament to my ability to build user-centric software</p>
             <div className="project-tabs">
-                <div className={ `${selected.Devs && 'selectedProj'} , projectCard`} onClick={()=>handleSelect("Devs")} to='/projects'>
-                    <div className="additional-info">
-                        <h3>Deliverable Tracking System</h3>
-                        <span>Type: Assignment</span> 
-                        <span>Dates: 12/02/2022 - 12/03/2022</span>
-                    </div>
-                {selected.Devs && <ProjectDescription />} </div>
-                <div className={ `${selected.Healthy && 'selectedProj'} , projectCard`} onClick={()=>handleSelect("Healthy")} to='/projects'>
-                <div className="additional-info">
-                        <h3>Healthy Travel App</h3>
-                        <span>Type: Assignment</span> 
-                        <span>Dates: 12/02/2022 - 12/03/2022</span>
-                    </div>
-                {selected.Healthy && <ProjectDescription />} </div>
-                <div className={ `${selected.Reading && 'selectedProj'} , projectCard`} onClick={()=>handleSelect("Reading")} to='/projects'>
-                <div className="additional-info">
-                        <h3>Score App</h3> 
-                        <span>Type: Assignment</span> 
-                        <span>Dates: 12/02/2022 - 12/03/2022</span>
-                    </div>
-                {selected.Reading && <ProjectDescription />} </div>
-                <div className={`${selected.Score ? 'selectedProj' : ''} projectCard`} onClick={() => handleSelect("Score")} to="/projects">
-                <div className="additional-info">
-                        <h3>Score App</h3> 
-                        <span>Type: Assignment</span> 
-                        <span>Dates: 12/02/2022 - 12/03/2022</span>
-                    </div>
-                {selected.Score && <ProjectDescription />}
-</div>
-            
+            <ProjectTab 
+                header="Deliverable Tracking System"
+                type="Clients' Project"
+                dates="02/2022 - 03/2022"
+                open={true}
+                description={<ProjectDescription technologies={[ 'React','Redux Toolkit', 'CSS','NodeJS', 'Express', 'Joi Validator', 'RESTful API', 'MySQL MariaDB', 'JSON']} userTypes={['Student', 'Supervisor', 'Admin']}/>}
+                />
+             <ProjectTab 
+                header="Healthy Travel Mobile App"
+                type="Assignment"
+                dates="02/2022 - 03/2022"
+                description={<ProjectDescription technologies={['React Native','NodeJS', 'Express', 'AmadeusAPI (for flight ticketing, accomdation)','OpenAI API' ,'Joi Validator', 'RESTful API', 'MongoDB']}/>}
+                />
+             <ProjectTab 
+                header="Score Card App"
+                type="Assignment"
+                dates="02/2022 - 03/2022"
+                description={<ProjectDescription technologies={['JavaScript', 'React', 'CSS','NodeJS', 'Express', 'Joi Validator', 'RESTful API']}/>}
+                />
+             <ProjectTab 
+                header="Reading Diary App"
+                type="Assignment"
+                dates="02/2022 - 03/2022"
+                description={<ProjectDescription technologies={['JAVA', 'Android Studio', 'OOP']}/>}
+                />
             </div>
-            <div className="links">
+            <div className="linkstonext">
             <Link to='/'>Return To Home </Link>
         <img className="arrowright" src={arrowright} alt="arrow right"/>
         </div>

@@ -1,5 +1,6 @@
 .AboutMeCard{
-    width: 80%;
+    width: 100%;
     font-size: 12px;
     line-height: 25px;
+    text-align: justify;
 }

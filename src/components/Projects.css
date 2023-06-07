@@ -1,6 +1,16 @@
 .projects-container{
     padding: 15px;
 }
+h1.projectTitle{
+  width: 30%;
+  float: left;
+}
+.introduction-projects{
+  width: 60%;
+  text-align: justify;
+  margin-left: auto;
+  margin-top: 23px;
+}
 .project-tabs>a:hover {
     animation: text-color-animation .3s ease-in;
     color: salmon;
@@ -48,3 +58,19 @@
       color: salmon;
     }
   }
+@media only screen and (max-width: 600px) {
+    .introduction-projects{
+      margin: 0;
+      width: 100%;
+    }
+    .introduction-projects{
+      padding: 20px 0;
+  }
+  .links{
+    padding: 20px 0;
+  }
+  h1.projectTitle{
+    width: 100%;
+    float: none;
+  }
+}

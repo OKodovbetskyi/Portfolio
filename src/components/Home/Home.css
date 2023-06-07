@@ -3,8 +3,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 70%;
     padding: 15px;
     min-height: 70vh;
+    
 }
 
 .home-icons{
@@ -18,6 +20,7 @@
   height: 50px;
 }
 .aboutMeLink {
+
     text-decoration: none;
     position: relative;
     color: black;
@@ -66,6 +69,8 @@ h1.devName{
         text-align: center;
         height: 80vh;
         align-items: center;
+        width: 90%;
+        margin: 0 auto;
         
     }
     .arrow {

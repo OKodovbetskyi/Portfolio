@@ -71,7 +71,7 @@ same page and that customer needs are met.</li>
                 
             </div>
         </div>
-        <div className="links">
+        <div className="linkstonext">
             <Link to='/projects'>Lets Continue To Projects </Link>
         <img className="arrowright" src={arrowright} alt="arrow right"/></div>
         

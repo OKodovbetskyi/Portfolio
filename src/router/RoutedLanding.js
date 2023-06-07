@@ -35,6 +35,7 @@ const RoutedLanding = () => {
      <Route path='/about' element={<Education />}/>
      <Route path='/projects/*' element={<Projects/>}/>
      <Route path='/contact-me' element={<Contact/>}/>
+     <Route path='/contact-me' element={<Contact/>}/>
       </Routes>
      </Card>   
    

@@ -48,6 +48,7 @@ const Skills = React.forwardRef((prop,ref) =>{
             <li>Git</li>
             <li>IntelLiJ</li>
             <li>AWS Amplify</li>
+            <li>Postman</li>
         </ul>
         </div>
         <div className="skillWrapper">
@@ -57,6 +58,7 @@ const Skills = React.forwardRef((prop,ref) =>{
             <li>Scrum</li>
             <li>Responsive Design</li>
             <li>Relational Databases</li>
+            <li>Fundamentals of Cloud Computing</li>
         </ul>
         </div>
         </div>
