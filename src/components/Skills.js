@@ -44,6 +44,7 @@ const Skills = React.forwardRef((prop,ref) =>{
         <p>Tools</p>
         <ul className="skillItem">
             <li>VSCode</li>
+            <li>Axios</li>
             <li>Unix Command Line</li>
             <li>Git</li>
             <li>IntelLiJ</li>

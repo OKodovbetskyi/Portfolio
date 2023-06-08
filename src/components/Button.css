@@ -7,7 +7,7 @@
     font-size: 12px;
     font-family: sans-serif;
     text-decoration: none;
-    color: #333;
+    color: #4F709C;
     border: 1px solid #333;
     letter-spacing: 2px;
     text-align: center;
@@ -20,7 +20,15 @@
     position: relative;
     z-index: 2;
   }
-  
+  a.custom-button{
+    padding: 5px;
+  }
+  .version2{
+    background-color: #4F709C;
+    color: white;
+    margin-left: 0;
+  }
+    
   .custom-button:after{
     position: absolute;
     content: "";
@@ -28,7 +36,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #01257D;
+    background: #4F709C;
     transition: all .35s;
   }
   

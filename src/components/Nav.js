@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import './Nav.css';
-import logo from '../assets/ak-low-resolution-logo-black-on-white-background.png'
+import logo from '../assets/aklogo.png'
 import Skills from './Skills';
 import Projects from './Projects';
 import { Link } from 'react-router-dom';

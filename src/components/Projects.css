@@ -20,7 +20,6 @@ h1.projectTitle{
     color: black;
     width: 100%;
     text-align: center;
-    background-color: white;
     margin: 5px;
   }
 .project-tabs{
@@ -38,7 +37,7 @@ h1.projectTitle{
   align-items: center;
 }
 .projectCard{
-  background-color: white;
+  background-color: #F5EFE7;
   padding: 0 10px;
   margin: 5px 0;
 }

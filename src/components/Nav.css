@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #F5EFE7;
     z-index: 1000;
   }
   .navbar-links {
@@ -35,7 +35,7 @@
     transform: rotate(100deg);
 
   }
-  .hamburger-menu{
+  div.hamburger-menu{
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -46,7 +46,7 @@
       height: 100vh;
       z-index: 900;
       overflow: hidden;
-      background-color: #0030ab; 
+      background-color: #4F709C; 
 
   }
   .hamburger-menu a{
@@ -63,7 +63,7 @@
   top: 0;
   justify-content: space-between;
   width: 100%;
-  background-color: #0030ab;
+  background-color: #4F709C;
 }
   @media (max-width: 768px) {
     .navbar-links a{
@@ -103,7 +103,7 @@
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: salmon;
+    background-color: #4F709C;
     transition: width 0.3s;
   }
   
@@ -118,13 +118,13 @@
       color: black;
     }
     100% {
-      color: salmon;
+      color: #4F709C;
     }
   }
   /* Add the hover effect */
   .navbar-links a:hover {
     animation: text-color-animation .3s ease-in;
-    color: salmon;
+    color: #4F709C;
   }
   .nav-logo{
     width: 80px;
