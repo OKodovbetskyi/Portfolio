@@ -14,22 +14,26 @@ export const Contact = () =>{
     return (
         <div className="projects-container">
             <h1>Contact.</h1>
-            <p>Get in touch or email me directly on <b>oleksandr.kodovbetskyi@gmail.com</b></p>
+            <p>Email me directly on <span className='hightlight'><b>oleksandr.kodovbetskyi@gmail.com</b></span></p>
+            <p>Thank you!</p>
             <form className="contact-form" onSubmit={handleSubmit}>
             <input
                 type="text"
                 placeholder="Your Name"
                 value={name}
+                disabled={true}
                 onChange={(e) => setName(e.target.value)}
             />
             <input
                 type="email"
                 placeholder="Your Email"
+                disabled={true}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
                 placeholder="Your Message"
+                disabled={true}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             ></textarea>

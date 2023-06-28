@@ -1,6 +1,6 @@
 import Card from "./Card"
 import React from "react"
-import styles from "./Skills.modules.css";
+import "./Skills.css";
 const Skills = React.forwardRef((prop,ref) =>{
     return (
         <div>
@@ -31,6 +31,7 @@ const Skills = React.forwardRef((prop,ref) =>{
             <li>Express</li>
             <li>MySQL</li>
             <li>MongoDB</li>
+            <li>Mongoose</li>
         </ul>
         </div>
         <div className="skillWrapper">
@@ -49,6 +50,7 @@ const Skills = React.forwardRef((prop,ref) =>{
             <li>Git</li>
             <li>IntelLiJ</li>
             <li>AWS Amplify</li>
+            <li>Heroku</li>
             <li>Postman</li>
         </ul>
         </div>
@@ -60,6 +62,7 @@ const Skills = React.forwardRef((prop,ref) =>{
             <li>Responsive Design</li>
             <li>Relational Databases</li>
             <li>Fundamentals of Cloud Computing</li>
+            <li>CI/CD</li>
         </ul>
         </div>
         </div>

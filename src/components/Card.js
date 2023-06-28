@@ -10,9 +10,9 @@ const Card = React.forwardRef((props, ref)=>{
             <h2 className={styles.header}>   {props.cardName}</h2>
                 {props.children}
             </div>
-            <Footer />
+           
         </div>
-      
+        <Footer />
         </div>
     )
 })

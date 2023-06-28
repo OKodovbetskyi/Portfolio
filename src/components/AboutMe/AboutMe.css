@@ -1,6 +1,9 @@
 .AboutMeCard{
     width: 100%;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 25px;
     text-align: justify;
+}
+.highlight{
+    color: #2978B5;
 }

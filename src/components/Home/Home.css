@@ -1,14 +1,27 @@
-
 .homeContent{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 70%;
     padding: 15px;
     min-height: 70vh;
+    margin: 0 auto;
     
 }
-
+.location-container{
+  display: flex;
+}
+.location-icon{
+  width: 25px;
+  
+}
+.devName span{
+  color: #2978B5;
+}
+.devName{
+  font-size: 36px;
+}
 .home-icons{
   display: flex;
   margin: 15px 0;
@@ -19,12 +32,6 @@
   width: 40px;
   height: 40px;
 }
-.aboutMeLink {
-
-    text-decoration: none;
-    position: relative;
-    color: black;
-  }
 
   /* Add the underline */
   .aboutMeLink::before {
@@ -62,7 +69,7 @@
     }
   }
 h1.devName{
-  margin: 0;
+
 }
 @media only screen and (max-width: 600px) {
     .homeContent{

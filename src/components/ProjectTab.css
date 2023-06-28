@@ -1,0 +1,17 @@
+.projectCardClosed{
+  background-color: #2978B5;
+  color: #f5f5f5;
+  margin: 10px 0;
+  padding: 10px;
+}
+.projectCardClosed:hover{
+
+}
+.tab-details{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.selectedProj{
+  margin: 10px 0;
+}

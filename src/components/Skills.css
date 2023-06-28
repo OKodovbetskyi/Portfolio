@@ -4,10 +4,13 @@
 .skillWrapper{
     text-align: center;
 }
+ .skillWrapper p{
+    font-size: 16px;
+}
 .skillItem>li{
     display: inline-block;
     margin: 0 5px;
-    background: #4F709C;
+    background: #7EB8D6FF;
     color: white;
     font-weight: bold;
     padding:0 5px;

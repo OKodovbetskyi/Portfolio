@@ -11,10 +11,6 @@ h1.projectTitle{
   margin-left: auto;
   margin-top: 23px;
 }
-.project-tabs>a:hover {
-    animation: text-color-animation .3s ease-in;
-    color: salmon;
-  }
 .project-tabs>a {
     text-decoration: none;
     color: black;
@@ -26,11 +22,7 @@ h1.projectTitle{
     display: flex;
     flex-direction: column;
 }
-.selectedProj .additional-info{
- color: salmon;
- border-bottom: 2px solid salmon;
- padding: 5px 0;
-}
+
 .additional-info{
   display: flex;
   justify-content: space-between;
@@ -49,14 +41,6 @@ h1.projectTitle{
 }
 .additional-info h3{ 
 }
-@keyframes text-color-animation {
-    0% {
-      color: black;
-    }
-    100% {
-      color: salmon;
-    }
-  }
 @media only screen and (max-width: 600px) {
     .introduction-projects{
       margin: 0;

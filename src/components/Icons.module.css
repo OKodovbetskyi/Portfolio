@@ -4,7 +4,7 @@ span img{
 }
 .Icons{
     display: flex;
-    background-color:  #D8C4B6;
+    background-color:  #fcfcfc;
 }
 .email{
     animation: ease-in .1s;
@@ -13,13 +13,8 @@ span img{
     color: white;
     border-radius: 20px;
 }
-.wrapper:hover .email{
-    display: inline;
-}
 .wrapper a{
     text-decoration: none;
 }
-span img:hover{
-    display: inline;
-}
+
 

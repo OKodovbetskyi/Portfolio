@@ -13,11 +13,13 @@ export const ProjectTab = ({header, type, dates, description, open=false}) =>{
         
     }
     return(
-        <div className={ `${selected.Devs && 'selectedProj'} , projectCard`} onClick={()=>handleSelect()} to='/projects'>
+        <div className={selected ? 'selectedProj': 'projectCardClosed'} onClick={()=>handleSelect()} to='/projects'>
                     <div className="additional-info">
                         <h3>{header}</h3>
+                        <div className='tab-details'>
                         <span>Type: {type}</span> 
                         <span>Dates: {dates}</span>
+                        </div>
                     </div>
                 {selected && description} </div>
     )

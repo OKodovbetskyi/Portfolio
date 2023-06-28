@@ -1,5 +1,7 @@
-footer{
- margin: 0 10px;
+.Footer{
+ margin: 10px 10px;
+ width: 100%;
+
 }
 @media only screen 
 and (max-width : 640px) {

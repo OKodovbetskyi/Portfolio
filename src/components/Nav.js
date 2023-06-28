@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 
 import './Nav.css';
-import logo from '../assets/aklogo.png'
-import Skills from './Skills';
-import Projects from './Projects';
+import logo from '../assets/ak-low-resolution.jpg'
 import { Link } from 'react-router-dom';
 import { Contact } from './Contact';
 const Nav = (props) =>{

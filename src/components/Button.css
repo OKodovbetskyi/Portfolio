@@ -3,28 +3,28 @@
  .custom-button{
     display: block;
     width: 150px;
-    height: 20px;
+    height: 30px;
     font-size: 12px;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     text-decoration: none;
-    color: #4F709C;
-    border: 1px solid #333;
+    color: #2978B5;
+    border: 1px solid #2978B5;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
-    transition: all .35s;
+    transition: all .25s;
     margin: 0 5px;
   }
   
  .custom-button span{
+    display: inline-block;
+    padding: 5px;
     position: relative;
     z-index: 2;
-  }
-  a.custom-button{
-    padding: 5px;
-  }
+ }
   .version2{
-    background-color: #4F709C;
+    background-color: #2978B5;
     color: white;
     margin-left: 0;
   }
@@ -36,10 +36,9 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #4F709C;
-    transition: all .35s;
+    background: #2978B5;
+    transition: all .25s;
   }
-  
   .custom-button:hover{
     color: #fff;
   }
