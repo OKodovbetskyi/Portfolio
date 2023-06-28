@@ -1,16 +1,10 @@
 import React from "react";
+import resume from "../assets/Oleksandr_Kodovbetskyi_CV.pdf"
 import styles from "./Icons.module.css";
 const IconsLinks = ({icon,icon1, icon2, icon3}) =>{
-    const handleDownload = () => {
-        const fileUrl = '/public/Oleksandr_Kodovbetskyi_CV.pdf';
-        const link = document.createElement('a');
-        link.href = fileUrl;
-        link.download = 'Oleksandr_Kodovbetskyi_CV.pdf';
-        link.click();
-      };
     return (
         <span className={styles.Icons}>
-            <div className={styles.wrapper}> <a onClick={handleDownload}>
+            <div className={styles.wrapper}> <a target="_blank" href={resume}>
 
             <p className={styles.email}>Resume</p> <img src={icon} alt=''/></a></div>
            <div className={styles.wrapper}><a href="mailto:oleksandr.kodovbetskyi@gmail.com" target="_blank"> 
