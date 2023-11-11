@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.729118f5.css",
+    "main.js": "/static/js/main.389322ce.js",
+    "static/media/studentdash1.png": "/static/media/studentdash1.52e69911dde7cac04998.png",
+    "static/media/studentdash.png": "/static/media/studentdash.1e20fcba24c276b4856e.png",
+    "static/media/HealthyTravel.png": "/static/media/HealthyTravel.e104cfb82a47714de4d4.png",
+    "static/media/androidapp.png": "/static/media/androidapp.a9e5ed0c21fed8e1a7b4.png",
+    "static/media/ak-low-resolution.jpg": "/static/media/ak-low-resolution.d4c27c86fae4bc3e5b39.jpg",
+    "static/media/pagedown.gif": "/static/media/pagedown.5127a040ec2b3b29212a.gif",
+    "index.html": "/index.html",
+    "main.729118f5.css.map": "/static/css/main.729118f5.css.map",
+    "main.389322ce.js.map": "/static/js/main.389322ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.729118f5.css",
+    "static/js/main.389322ce.js"
+  ]
+}
