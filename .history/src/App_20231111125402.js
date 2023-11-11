@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useRef } from "react";
-import { Helmet } from "react-helmet";
+
 import ThemeProvider, { useTheme, useThemeUpdate } from "./themes/ThemeContext";
 import RoutedLanding from "./router/RoutedLanding";
 

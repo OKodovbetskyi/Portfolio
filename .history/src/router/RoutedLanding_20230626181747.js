@@ -4,6 +4,9 @@ import Home from '../components/Home/Home';
 import React, {useRef} from 'react';
 import Education from '../components/Education';
 import Projects from '../components/Projects';
+import Footer from "../components/Footer";
+import AboutMe from "../components/AboutMe/AboutMe";
+import { useTheme, useThemeUpdate } from '../themes/ThemeContext';
 import './RouterLanding.modules.css';
 import Nav from '../components/Nav';
 
