@@ -38,11 +38,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     // Handle form submission logic here
     if (isValidRecord(input)) {
-      const response = await fetch("https://softwarehub.uk/emailservice/", {
-        method: "POST",
-        body: input,
-      });
-      console.log(response);
+      const response = await fetch("https://softwarehub.uk/emailservice/");
       if (response.status === 200) setMessageSent(true);
     } else {
       setErrors({ ...errors });
@@ -68,13 +64,7 @@ export const Contact = () => {
           type="text"
           placeholder="Your Name"
           value={input.name}
-          onChange={(e) => {
-            setInput({ ...input, name: e.target.value });
-            setErrors({
-              ...errors,
-              ["name"]: null,
-            });
-          }}
+          onChange={(e) => setInput({ ...input, name: e.target.value })}
         />
         {errors.email && <p style={{ color: "red" }}>Please enter email</p>}
         <input
@@ -82,12 +72,12 @@ export const Contact = () => {
           placeholder="Your Email"
           value={input.email}
           onChange={(e) => {
-            setInput({ ...input, email: e.target.value });
+            setInput({ ...input, email: e.target.value })
             setErrors({
-              ...errors,
-              ["email"]: null,
-            });
-          }}
+                ...errors,
+                ["message"]: null,
+              })
+            }
         />
         {errors.message && (
           <p style={{ color: "red" }}>Please enter some message</p>

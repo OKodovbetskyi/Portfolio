@@ -42,7 +42,6 @@ export const Contact = () => {
         method: "POST",
         body: input,
       });
-      console.log(response);
       if (response.status === 200) setMessageSent(true);
     } else {
       setErrors({ ...errors });

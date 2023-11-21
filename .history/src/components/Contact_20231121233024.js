@@ -9,10 +9,7 @@ const initilFormDetails = {
 export const Contact = () => {
   const [input, setInput] = useState(initilFormDetails);
   const [messageSent, setMessageSent] = useState(false);
-  const [errors, setErrors] = useState(
-    Object.keys(input).reduce((accum, key) => ({ ...accum, [key]: null }), {})
-  );
-
+  const [errors, setErrors] = useState([]);
   const isValid = {
     name: (text) => text.length > 0,
     email: (text) => text.length > 0,
@@ -37,16 +34,9 @@ export const Contact = () => {
   };
   const handleSubmit = async (e) => {
     // Handle form submission logic here
-    if (isValidRecord(input)) {
-      const response = await fetch("https://softwarehub.uk/emailservice/", {
-        method: "POST",
-        body: input,
-      });
-      console.log(response);
-      if (response.status === 200) setMessageSent(true);
-    } else {
-      setErrors({ ...errors });
-    }
+    console.log(isValidRecord());
+    const response = await fetch("https://softwarehub.uk/emailservice/");
+    if (response.status === 200) setMessageSent(true);
   };
 
   return (
@@ -63,45 +53,31 @@ export const Contact = () => {
         {messageSent && (
           <p>Your message has been successfully sent. Thank you!</p>
         )}
-        {errors.name && <p style={{ color: "red" }}>Please enter your name</p>}
+        {errors.includes("name") && (
+          <p style={{ color: "red" }}>Please enter your name</p>
+        )}
         <input
           type="text"
           placeholder="Your Name"
           value={input.name}
-          onChange={(e) => {
-            setInput({ ...input, name: e.target.value });
-            setErrors({
-              ...errors,
-              ["name"]: null,
-            });
-          }}
+          onChange={(e) => setName(e.target.value)}
         />
-        {errors.email && <p style={{ color: "red" }}>Please enter email</p>}
+        {errors.includes("email") && (
+          <p style={{ color: "red" }}>Please enter email</p>
+        )}
         <input
           type="email"
           placeholder="Your Email"
-          value={input.email}
-          onChange={(e) => {
-            setInput({ ...input, email: e.target.value });
-            setErrors({
-              ...errors,
-              ["email"]: null,
-            });
-          }}
+          value={input.message}
+          onChange={(e) => setEmail(e.target.value)}
         />
-        {errors.message && (
+        {errors.includes("message") && (
           <p style={{ color: "red" }}>Please enter some message</p>
         )}
         <textarea
           placeholder="Your Message"
-          value={input.message}
-          onChange={(e) => {
-            setInput({ ...input, message: e.target.value });
-            setErrors({
-              ...errors,
-              ["message"]: null,
-            });
-          }}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         ></textarea>
         <Button title="Send" to="#" onClick={() => handleSubmit()} />
       </form>
