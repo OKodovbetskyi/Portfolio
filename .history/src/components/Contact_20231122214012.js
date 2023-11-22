@@ -54,8 +54,9 @@ export const Contact = () => {
             }),
           }
         );
+
+        console.log(response);
         if (response.status === 200) setMessageSent(true);
-        setInput({ name: "", email: "", message: "" });
       } catch (err) {
         console.log(err);
       }

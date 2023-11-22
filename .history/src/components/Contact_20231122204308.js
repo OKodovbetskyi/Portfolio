@@ -39,23 +39,17 @@ export const Contact = () => {
     // Handle form submission logic here
     if (isValidRecord(input)) {
       try {
-        const response = await fetch(
-          "https://softwarehub.uk/emailservice/contact-me",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              receiverEmail: "oleksandr.kodovbetskyi@gmail.com",
-              email: input.email,
-              name: input.name,
-              text: input.message,
-            }),
-          }
-        );
+        const response = await fetch("http://localhost:3001/contact-me", {
+          method: "POST",
+          body: {
+            receiverEmail: "oleksandr.kodovbetskyi@gmail.com",
+            email: input.email,
+            phone_number: "not provided",
+            text: input.name + " " + input.message,
+          },
+        });
+        console.log(response);
         if (response.status === 200) setMessageSent(true);
-        setInput({ name: "", email: "", message: "" });
       } catch (err) {
         console.log(err);
       }

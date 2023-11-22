@@ -55,7 +55,7 @@ export const Contact = () => {
           }
         );
         if (response.status === 200) setMessageSent(true);
-        setInput({ name: "", email: "", message: "" });
+        setInput(initilFormDetails);
       } catch (err) {
         console.log(err);
       }

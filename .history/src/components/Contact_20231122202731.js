@@ -40,22 +40,19 @@ export const Contact = () => {
     if (isValidRecord(input)) {
       try {
         const response = await fetch(
-          "https://softwarehub.uk/emailservice/contact-me",
+          "http://localhost:3001/emailservice/contact-me",
           {
             method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
+            body: {
               receiverEmail: "oleksandr.kodovbetskyi@gmail.com",
               email: input.email,
-              name: input.name,
-              text: input.message,
-            }),
+              phone_number: "not provided",
+              text: input.name + " " + input.message,
+            },
           }
         );
+        console.log(response);
         if (response.status === 200) setMessageSent(true);
-        setInput({ name: "", email: "", message: "" });
       } catch (err) {
         console.log(err);
       }

@@ -49,13 +49,14 @@ export const Contact = () => {
             body: JSON.stringify({
               receiverEmail: "oleksandr.kodovbetskyi@gmail.com",
               email: input.email,
-              name: input.name,
-              text: input.message,
+              phone_number: "not provided",
+              text: input.name + " " + input.message,
             }),
           }
         );
+
+        console.log(response);
         if (response.status === 200) setMessageSent(true);
-        setInput({ name: "", email: "", message: "" });
       } catch (err) {
         console.log(err);
       }
