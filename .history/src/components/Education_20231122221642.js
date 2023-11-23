@@ -17,40 +17,23 @@ const Education = (props, ref) => {
         <div className="Job">
           <img className="circle" src={circle} alt="" />
           <h5>
-            EVRI, IT Graduate Scheme{" "}
-            <span className="datesworked">07/2023 to current</span>
+            Amazon Prime, Delivery Driver{" "}
+            <span className="datesworked">03/2020 to 12/2022</span>
           </h5>
           <li>
-            {" "}
-            Improved system reliability by diagnosing and resolving underlying
-            technical issues.
+            Providing training and guidance to new delivery drivers on safe
+            driving practices, package handling, and customer service.
           </li>
           <li>
-            {" "}
-            Monitored support metrics and incident trends to optimize
-            application performance.
+            Evaluating the performance of new drivers and providing feedback and
+            coaching to help them improve their skills.
           </li>
           <li>
-            {" "}
-            Managed support for a courier application servicing over 20,000
-            users.
-          </li>
-          <li> Addressed and resolved App Dynamics alerts.</li>
-          <li>
-            {" "}
-            Facilitated global batch tracking via API and SFTP for client
-            operations.
-          </li>
-          <li> Conducted whitelisting and authentication troubleshooting.</li>
-          <li>
-            {" "}
-            Debugged Java Spring Boot applications to identify and rectify
-            issues.
+            Managing my time effectively to ensure that all deliveries are
+            completed by the requested deadline.
           </li>
           <li>
-            {" "}
-            Contributed to Agile sprint planning and reviews to meet stakeholder
-            objectives.
+            Delivering packages to customers in a timely and efficient manner.
           </li>
         </div>
         <div className="Job">
@@ -59,7 +42,7 @@ const Education = (props, ref) => {
             <img className="circle" src={circle} alt="" />
             <h5>
               Technology Internship{" "}
-              <span className="datesworked">06/2023 to 08/2023</span>
+              <span className="datesworked">06/2023 to current</span>
             </h5>
             <li>
               Leading a high-performing team of developers throughout the entire

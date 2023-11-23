@@ -31,11 +31,10 @@ const Skills = React.forwardRef((prop, ref) => {
           <li>Express</li>
           <li>GraphQl</li>
           <li>Apollo Server</li>
-          <li>Prisma</li>
+          <li>Nginx</li>
           <li>MySQL</li>
           <li>MongoDB</li>
           <li>Mongoose</li>
-          <li>Nginx</li>
         </ul>
       </div>
       <div className="skillWrapper">

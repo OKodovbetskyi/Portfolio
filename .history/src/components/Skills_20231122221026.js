@@ -30,12 +30,9 @@ const Skills = React.forwardRef((prop, ref) => {
           <li>Node</li>
           <li>Express</li>
           <li>GraphQl</li>
-          <li>Apollo Server</li>
-          <li>Prisma</li>
           <li>MySQL</li>
           <li>MongoDB</li>
           <li>Mongoose</li>
-          <li>Nginx</li>
         </ul>
       </div>
       <div className="skillWrapper">
@@ -49,7 +46,6 @@ const Skills = React.forwardRef((prop, ref) => {
       <div className="skillWrapper">
         <p>Tools</p>
         <ul className="skillItem">
-          <li>Docker</li>
           <li>VSCode</li>
           <li>Axios</li>
           <li>Unix Command Line</li>

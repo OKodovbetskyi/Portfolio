@@ -18,7 +18,7 @@ const Education = (props, ref) => {
           <img className="circle" src={circle} alt="" />
           <h5>
             EVRI, IT Graduate Scheme{" "}
-            <span className="datesworked">07/2023 to current</span>
+            <span className="datesworked">03/2020 to 12/2022</span>
           </h5>
           <li>
             {" "}

@@ -15,51 +15,12 @@ const Education = (props, ref) => {
       <h3 className="section-title">Experience</h3>
       <div className="experience-container">
         <div className="Job">
-          <img className="circle" src={circle} alt="" />
-          <h5>
-            EVRI, IT Graduate Scheme{" "}
-            <span className="datesworked">07/2023 to current</span>
-          </h5>
-          <li>
-            {" "}
-            Improved system reliability by diagnosing and resolving underlying
-            technical issues.
-          </li>
-          <li>
-            {" "}
-            Monitored support metrics and incident trends to optimize
-            application performance.
-          </li>
-          <li>
-            {" "}
-            Managed support for a courier application servicing over 20,000
-            users.
-          </li>
-          <li> Addressed and resolved App Dynamics alerts.</li>
-          <li>
-            {" "}
-            Facilitated global batch tracking via API and SFTP for client
-            operations.
-          </li>
-          <li> Conducted whitelisting and authentication troubleshooting.</li>
-          <li>
-            {" "}
-            Debugged Java Spring Boot applications to identify and rectify
-            issues.
-          </li>
-          <li>
-            {" "}
-            Contributed to Agile sprint planning and reviews to meet stakeholder
-            objectives.
-          </li>
-        </div>
-        <div className="Job">
           <h5>Kingston University </h5>
           <div className="experience-container">
             <img className="circle" src={circle} alt="" />
             <h5>
               Technology Internship{" "}
-              <span className="datesworked">06/2023 to 08/2023</span>
+              <span className="datesworked">06/2023 to current</span>
             </h5>
             <li>
               Leading a high-performing team of developers throughout the entire
