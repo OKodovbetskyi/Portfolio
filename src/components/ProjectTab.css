@@ -1,17 +1,49 @@
-.projectCardClosed{
-  background-color: #2978B5;
+.projectCardClosed {
+  background-color: #2978b5;
   color: #f5f5f5;
   margin: 10px 0;
   padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 15px;
 }
-.projectCardClosed:hover{
 
+.projectCardClosed:hover {
+  cursor: pointer; /* Adding cursor pointer on hover */
 }
-.tab-details{
+
+.tab-details {
   display: flex;
   justify-content: space-between;
   width: 60%;
 }
-.selectedProj{
+
+.selectedProj {
+  border-radius: 15px;
+  background-color: #2978b5;
+
+  padding: 10px;
   margin: 10px 0;
+}
+.additional-info {
+  color: whitesmoke;
+}
+/* New CSS for description transition */
+.description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.selectedProj .description {
+  max-height: 1000px; /* Adjust as needed */
+  transition: max-height 0.5s ease;
+}
+
+.show {
+  max-height: 1000px; /* Adjust as needed */
+}
+
+.hide {
+  max-height: 0;
+  overflow: hidden;
 }
