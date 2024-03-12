@@ -1,58 +1,59 @@
-.projects-container{
-    padding: 15px;
+.projects-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
-h1.projectTitle{
-  width: 30%;
+h1.projectTitle {
+  width: 100%;
   float: left;
 }
-.introduction-projects{
+.introduction-projects {
   width: 60%;
   text-align: justify;
   margin-left: auto;
   margin-top: 23px;
 }
-.project-tabs>a {
-    text-decoration: none;
-    color: black;
-    width: 100%;
-    text-align: center;
-    margin: 5px;
-  }
-.project-tabs{
-    display: flex;
-    flex-direction: column;
+.project-tabs > a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  text-align: center;
+  margin: 5px;
+}
+.project-tabs {
+  display: flex;
+  flex-direction: column;
 }
 
-.additional-info{
+.additional-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.projectCard{
-  background-color: #F5EFE7;
+.projectCard {
+  background-color: #f5efe7;
   padding: 0 10px;
   margin: 5px 0;
 }
-.projectCard h3{
+.projectCard h3 {
   font-size: 14px;
 }
-.hideProj{
+.hideProj {
   display: none;
 }
-.additional-info h3{ 
-}
+
 @media only screen and (max-width: 600px) {
-    .introduction-projects{
-      margin: 0;
-      width: 100%;
-    }
-    .introduction-projects{
-      padding: 20px 0;
+  .introduction-projects {
+    margin: 0;
+    width: 100%;
   }
-  .links{
+  .introduction-projects {
     padding: 20px 0;
   }
-  h1.projectTitle{
+  .links {
+    padding: 20px 0;
+  }
+  h1.projectTitle {
     width: 100%;
     float: none;
   }
