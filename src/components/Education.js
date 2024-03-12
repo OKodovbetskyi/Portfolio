@@ -186,7 +186,7 @@ const Education = (props, ref) => {
         </div>
         <div className="location">
           <p>
-            <b>2020 - Current</b>
+            <b>2020 - 2023</b>
           </p>
           <p>
             <img className="imagepin" src={IconUni} alt="" />

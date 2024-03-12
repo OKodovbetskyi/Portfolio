@@ -1,29 +1,29 @@
-.Card{
+.Card {
   margin-top: 3%;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   position: relative;
-} 
-
-.CardBody{
-    min-height: 90vh;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.header{
-    font-weight: bold;
 }
 
-.closinTag{
-    float: right;
+.CardBody {
+  padding: 0 25px;
+  min-height: 90vh;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.header {
+  font-weight: bold;
+}
+
+.closinTag {
+  float: right;
 }
 
 @media only screen and (max-width: 600px) {
-    .Card{
-        width: 100%;
-        margin: 0;
-    }
-    .CardBody{
-        height: 100%;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-   
+  .Card {
+    width: 100%;
+    margin: 0;
+  }
+  .CardBody {
+    height: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
 }

@@ -1,185 +1,182 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FCFCFC;
-    z-index: 1000;
-  }
-  .navbar-links {
-    position: relative;
-    display: flex;
-  }
-  
-  .navbar-links a {
-    padding: 0 ;
-    text-decoration: none;
-    color: #55555;
-    text-align: center;
-    font-size: 16px;
-  }
-  .navbar-hamburger {
-    display: none;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfcfc;
+  z-index: 1000;
+}
+.navbar-links {
+  position: relative;
+  display: flex;
+}
 
-  .navbar-hamburger-line {
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    margin: 6px 10px;
-    transition: transform 0.2s ease;
-    z-index: 1000;
-  }
-  
-  .navbar-hamburger-line.open {
-    transform: rotate(100deg);
+.navbar-links a {
+  padding: 0;
+  text-decoration: none;
+  color: #55555;
+  text-align: center;
+  font-size: 16px;
+}
+.navbar-hamburger {
+  display: none;
+}
 
-  }
-  div.hamburger-menu{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      z-index: 900;
-      overflow: hidden;
-      background-color: #4F709C; 
+.navbar-hamburger-line {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 10px;
+  transition: transform 0.2s ease;
+  z-index: 1000;
+}
 
-  }
-  .hamburger-menu a{
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    margin: 15px;
-    color: white;
-    text-decoration: none;
-  }
-.mobile-menu{
+.navbar-hamburger-line.open {
+  transform: rotate(100deg);
+}
+div.hamburger-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 900;
+  overflow: hidden;
+  background-color: #4f709c;
+}
+.hamburger-menu a {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+}
+.mobile-menu {
   display: flex;
   position: fixed;
   top: 0;
   justify-content: space-between;
   width: 100%;
-  background-color: #4F709C;
+  background-color: #4f709c;
 }
-  @media (max-width: 768px) {
-    .navbar-links a{
-      display: none;
-      width: 100%;
-    }
-    .navbar-hamburger {
-      display: block;
-    }
-    .navbar-hamburger-line {
-     
-    }
-  }
-  .selected{
-    border-radius: 10px 10px 0 0;
-    background-color: #E1E5F8;
-  }
-  .navbar-links a{
-    height: 100%;
+@media (max-width: 768px) {
+  .navbar-links a {
+    display: none;
     width: 100%;
-    text-decoration: none;
-    color: black;
-    padding:5px 20px;
-    transition: border-bottom 0.5s;
+  }
+  .navbar-hamburger {
+    display: block;
+  }
+  .navbar-hamburger-line {
+  }
+}
+.selected {
+  border-radius: 10px 10px 0 0;
+  background-color: #e1e5f8;
+}
+.navbar-links a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+  transition: border-bottom 0.5s;
 }
 /* Add this to the link element */
 .navbar-links a {
-    text-decoration: none;
-    position: relative;
-    color: black;
-  }
-  /* Add the underline */
-  .navbar-links a::before {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -2px;
-    background-color: #2978B5;
-    transition: width 0.3s;
-  }
-  
-  /* Add the hover effect */
-  .navbar-links a:hover::before {
-    width: 55%;
-  }
-  /* Add the animation effect */
+  text-decoration: none;
+  position: relative;
+  color: black;
+}
+/* Add the underline */
+.navbar-links a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  background-color: #2978b5;
+  transition: width 0.3s;
+}
+
+/* Add the hover effect */
+.navbar-links a:hover::before {
+  width: 55%;
+}
+/* Add the animation effect */
 /* Add the animation effect */
 @keyframes text-color-animation {
-    0% {
-      color: black;
-    }
-    100% {
-      color: #2978B5;
-    }
+  0% {
+    color: black;
   }
-  /* Add the hover effect */
-  .navbar-links a:hover {
-    animation: text-color-animation .3s ease-in;
-    color: #2978B5;
+  100% {
+    color: #2978b5;
   }
-  .nav-logo{
-    width: 60px;
-  }
-  .close-icon {
-    position: fixed;
-    top: 20px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  .close-icon-circle {
-    background-color: transparent;
-    border: 2px solid white;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .close-icon-line {
-    position: absolute;
-    width: 12px;
-    height: 2px;
-    background-color: #ffffff;
-    transform: rotate(45deg);
-  }
-  
-  .close-icon-line:nth-child(2) {
-    transform: rotate(-45deg);
-  }
-  
-  .close-icon-line::before,
-  .close-icon-line::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: inherit;
-  }
-  
-  .close-icon-line::before {
-    transform: rotate(-90deg);
-  }
-  
-  .close-icon-line::after {
-    transform: rotate(90deg);
-  }
-  
-        
-    
-   
-  
+}
+/* Add the hover effect */
+.navbar-links a:hover {
+  animation: text-color-animation 0.3s ease-in;
+  color: #2978b5;
+}
+
+.navbar-links .active {
+  animation: text-color-animation 0.3s ease-in;
+  color: #2978b5;
+}
+
+.nav-logo {
+  width: 100px;
+}
+.close-icon {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-icon-circle {
+  background-color: transparent;
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.close-icon-line {
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+.close-icon-line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.close-icon-line::before,
+.close-icon-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+}
+
+.close-icon-line::before {
+  transform: rotate(-90deg);
+}
+
+.close-icon-line::after {
+  transform: rotate(90deg);
+}
